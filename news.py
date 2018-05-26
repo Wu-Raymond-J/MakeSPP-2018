@@ -226,7 +226,7 @@ HEADER = '''
 
     <div class="w3-topleft">
   <form method="GET" action="news.py">
-    <input type="text" name="search" value="Type here to search">
+    <input type="text" name="search" placeholder="Type here to search">
     <input type="submit" style="display: none" />
   </form>
 </div>
