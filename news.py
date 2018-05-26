@@ -286,7 +286,8 @@ def parse_dictionary():
     list_of_images = []
 
     if int(dictionary["totalResults"]) == 0:
-        print("No relevant articles found!")
+        print (HEADER + '<center><b>No relevant articles found!</b></center>\n<br><center>Click <a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html">here</a> to go back</center>') + FOOTER
+        exit()
     else:
         articles = dictionary["articles"]
         for article in articles:
