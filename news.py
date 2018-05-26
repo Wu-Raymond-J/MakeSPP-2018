@@ -84,9 +84,16 @@ def sourceData(endpoint, query):
     data = response.json()
     return data
 
+def parseFormData():
+    endpoint = ""   # temporary
+    # endpoint = form.getValue('endpoint')
+    query = form.getvalue('search')
+    #### TEMPORARY
+    query = "new york city"
+    json = sourceData(endpoint, query)
+    return json
 
-json = sourceData("", "")
-for key, value in json.items():
+'''    for key, value in json.items():
     if key == "articles":
         print (key)
         print ("****")
@@ -96,12 +103,35 @@ for key, value in json.items():
         print ("****")
     else:
         print (key, value)
+'''
 
+def user_view():
+    dictionary = parseFormData()
+    return_dictionary = {}
 
-def parseFormData():
-    endpoint = ""   # temporary
-    # endpoint = form.getValue('endpoint')
-    query = form.getvalue('search')
+    list_of_titles = []
+    list_of_authors = []
+    list_of_sources= []
+    list_of_urls = []
+    list_of_images = []
 
-    return sourceData(endpoint, query)
+    if int(dictionary["totalResults"]) == 0:
+        print("No relevant articles found!")
+    else:
+        articles = dictionary["articles"]
+        for article in articles:
+            list_of_titles.append(article["title"])
+            list_of_authors.append(article["author"])
+            list_of_sources.append(article['source']['name'])
+            list_of_urls.append(article['url'])
+            list_of_images.append(article['urlToImage'])
 
+        return_dictionary["titles"] = list_of_titles
+        return_dictionary["author"] = list_of_authors
+        return_dictionary["sources"] = list_of_sources
+        return_dictionary["urls"] = list_of_urls
+        return_dictionary['urlToImage'] = list_of_images
+
+    print(return_dictionary)
+        
+user_view()        
