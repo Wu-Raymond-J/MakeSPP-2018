@@ -110,7 +110,7 @@ def parse_dictionary():
             list_of_images.append(article['urlToImage'])
 
         return_dictionary["titles"] = list_of_titles
-        return_dictionary["author"] = list_of_authors
+        return_dictionary["authors"] = list_of_authors
         return_dictionary["sources"] = list_of_sources
         return_dictionary["urls"] = list_of_urls
         return_dictionary['urlToImage'] = list_of_images
