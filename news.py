@@ -260,6 +260,8 @@ def parseFormData():
     endpoint = ""   # temporary
     # endpoint = form.getValue('endpoint')
     query = form.getvalue('search')
+    #### TEMPORARY
+    query = "new york city"
     json = sourceData(endpoint, query)
     return json
 
@@ -286,8 +288,7 @@ def parse_dictionary():
     list_of_images = []
 
     if int(dictionary["totalResults"]) == 0:
-        print (HEADER + '<center><b>No relevant articles found!</b></center>\n<br><center>Click <a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html">here</a> to go back</center>') + FOOTER
-        exit()
+        print("No relevant articles found!")
     else:
         articles = dictionary["articles"]
         for article in articles:
@@ -351,7 +352,7 @@ def main():
         except:
             break
     
-    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'")
+    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'")).replace(u"\uxe9", "'")
     return HEADER + return_string + FOOTER
 
 print(main())
