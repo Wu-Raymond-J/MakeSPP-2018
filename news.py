@@ -1,10 +1,13 @@
 #!/usr/bin/python
-print ("Content-type: text/html\n")
+print( "Content-type: text/html\n")
 import cgitb
 cgitb.enable()
 
 import cgi
 import requests
+import json
+
+form = cgi.FieldStorage()
 
 print ('''
 <!DOCTYPE html>
@@ -53,8 +56,7 @@ print ('''
 </body>
 
 </html>
-'''
-       )
+''')
 
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
@@ -75,10 +77,21 @@ def getURL(endpoint, query):
     return retURL + "&apiKey=a842f08935ec4c4f8cbfa0ca729fc2c1"
 
 
+## returns JSON dictionary...
 def sourceData(endpoint, query):
     url = getURL(endpoint, query)
     response = requests.get(url)
-    return response.json()
+    data = response.json()
+    return data
 
-## debugging
-# print ( sourceData("everything", "Barack Obama") )
+
+print ( sourceData("", "") )  ## for planning for representing JSON data in bubbles
+
+
+def parseFormData():
+    endpoint = ""   # temporary
+    # endpoint = form.getValue('endpoint')
+    query = form.getvalue('search')
+
+    return sourceData(endpoint, query)
+

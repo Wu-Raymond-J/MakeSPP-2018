@@ -88,7 +88,7 @@
     background-color:rgba(255,255,255,.3);
   }
   .bg-bubbles li:nth-child(10){
-    left:90%;
+    left:69%;
     width:15px;
     height:15px;
     -webkit-animation-delay:1s;
@@ -115,14 +115,45 @@
     background-color:rgba(255,255,255,.3);
   }
   .bg-bubbles li:nth-child(12){
-    left:78%;
+    left:28%;
     width:30px;
     height:30px;
-    -webkit-animation-delay:5s;
-    animation-delay:5s;
+    -webkit-animation-delay:3s;
+    animation-delay:3s;
     -webkit-animation-duration:20s;
     animation-duration:20s;
     background-color:rgba(255,255,255,.3)
+  }
+
+  .bg-bubbles li:nth-child(13){
+    left:46%;
+    width:10px;
+    height:10px;
+    -webkit-animation-delay:2s;
+    animation-delay:2s;
+    -webkit-animation-duration:8s;
+    animation-duration:8s;
+    background-color:rgba(255,255,255,.4)
+  }
+  .bg-bubbles li:nth-child(14){
+    left:78%;
+    width:15px;
+    height:15px;
+    -webkit-animation-delay:8s;
+    animation-delay:8s;
+    -webkit-animation-duration:10s;
+    animation-duration:10s;
+    background-color:rgba(255,255,255,.4)
+  }
+  .bg-bubbles li:nth-child(15){
+    left:12%;
+    width:8px;
+    height:8px;
+    -webkit-animation-delay:12s;
+    animation-delay:12s;
+    -webkit-animation-duration:23s;
+    animation-duration:23s;
+    background-color:rgba(255,255,255,.4)
   }
   @-webkit-keyframes circle{
     0%{
