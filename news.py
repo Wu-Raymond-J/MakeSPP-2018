@@ -14,7 +14,7 @@ print ('''
 <html>
 
 <head>
-  <title>Project Name</title>
+  <title>MAKESPP 2018</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/other.css">
@@ -26,18 +26,19 @@ print ('''
 <body>
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
+      MAKESPP 2018
     </div>
-    <div class="w3-display-middle">
-    <a href="www.google.com" class="button">Link Button</a>
-    </div>
-
 
     <div class="w3-display-bottomleft w3-padding-large">
       Rubin Peci, Kaitlin Wan, Raymond Wu, Anne Zhang
     </div>
   </div>
- <ul class="bg-bubbles">
+<!--
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
     <li></li>
     <li></li>
     <li></li>
@@ -51,12 +52,11 @@ print ('''
     <li></li>
     <li></li>
 
-<ul>
+    <ul> -->
 
 </body>
 
-</html>
-''')
+</html>''')
 
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
