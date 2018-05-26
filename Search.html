@@ -8,26 +8,11 @@
   <link rel="stylesheet" type="text/css" href="css/Circles.css">
   <link rel="stylesheet" type="text/css" href="css/other.css">
   <style>
-.bigbubble1 {
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    height: 500px;
-    width: 500px;
-    position:relative;
-    top: 191px;
-    left: 420px;
-    right: -420px;
-    bottom:-191px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50%;
-}
+  #grad {
+    height: unlimited;
+    background:#aaf3f4 ; /* For browsers that do not support gradients */
+    background: linear-gradient(#aaf3f4, #3b65a4); /* Standard syntax (must be last) */
+  }
 .bigbubble0 {
     background-color: white; /* Green */
     border: none;
@@ -83,10 +68,10 @@
     display: inline-block;
     height: 500px;
     width: 500px;
-    top: 350px;
-    left: 150px;
-    right: -75px;
-    bottom:-50px;
+    top: 20px;
+    left: 400px;
+    right: -175px;
+    bottom:-150px;
     position:relative;
     font-size: 16px;
     margin: 4px 2px;
@@ -97,6 +82,7 @@
 </style>
 </head>
 <body>
+<div id="grad"></div>
 
 <a href="" class="bigbubble0 button0"></a>
 <a href="" class="bigbubble1 button1"></a>
