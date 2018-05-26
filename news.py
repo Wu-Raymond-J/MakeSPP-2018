@@ -348,7 +348,7 @@ def main():
     while True:
         try:
             return_string += med_bubble(i) + "\n\n\t\t"
-            i++
+            i += 1
         except:
             break
     
