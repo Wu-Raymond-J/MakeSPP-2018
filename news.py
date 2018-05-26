@@ -224,10 +224,16 @@ HEADER = '''
 </head>
 <body>
 
+    <div class="w3-topleft">
+  <form method="GET" action="news.py">
+    <input type="text" name="search" value="Variable">
+    <input type="submit" style="display: none" />
+  </form>
+</div>
+
 '''
 
 FOOTER = '''
-  </div>
 
 </body>
 
