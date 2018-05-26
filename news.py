@@ -224,9 +224,6 @@ HEADER = '''
 '''
 
 FOOTER = '''
-    <div class="w3-display-bottomleft w3-padding-large">
-      Rubin Peci, Kaitlin Wan, Raymond Wu, Anne Zhang
-    </div>
   </div>
 
 </body>
