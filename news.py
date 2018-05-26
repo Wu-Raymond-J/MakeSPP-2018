@@ -1,12 +1,14 @@
 #!/usr/bin/python
-print "Content-type: text/html\n"
+print( "Content-type: text/html\n")
+print ("Content-type: text/html\n")
 import cgitb
 cgitb.enable()
 
 import cgi
 import requests
+import json
 
-print '''
+print ('''
 <!DOCTYPE html>
 <html>
 
@@ -53,7 +55,8 @@ print '''
 </body>
 
 </html>
-'''
+''')
+
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
 
@@ -76,39 +79,9 @@ def getURL(endpoint, query):
 def sourceData(endpoint, query):
     url = getURL(endpoint, query)
     response = requests.get(url)
-    return response.json()
+    data = response.json()
+    return data
 
-
-## debugging ...
-
-
-## testing getURL ##
-
-
-# print ( getURL("", "barack obama") )
-# response = requests.get(getURL("","barack obama"))  # should return everything abt B. Obama
-# print ( response.json() )
-
-# print ( "#" * 50 )
-
-# print ( getURL("top-headlines", "") )
-# response = requests.get(getURL("everything",""))    # should return top headlines abt NYC
-# print ( response.json() )
-
-# print ( "#" * 50 )
-
-# print ( getURL("", "") )
-# response = requests.get(getURL("everything",""))    # should return everything abt NYC
-# print ( response.json() )
-
-
-
-## testing getHeadlines
-
-
-# print ( sourceData("", "barack obama" ) )  # should return everything abt B. Obama
-# print ( "#" * 50 )
-# print ( sourceData("top-headlines", "") )  # should return top headlines abt NYC
-# print ( "#" * 50 )
-# print ( sourceData("everything", "")    )  # should return everything abt NYC
+## debugging
+print ( sourceData("everything", "Barack Obama") )
 
