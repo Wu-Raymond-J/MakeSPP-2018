@@ -34,7 +34,7 @@ HEADER = '''
     display: inline-block;
     height: 500px;
     width: 500px;
-    opacity: 0.5;
+    opacity: 0.4;
     position:relative;
     top: 150px;
     left: 25px;
@@ -53,7 +53,7 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 500px;
     width: 500px;
@@ -75,7 +75,7 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 500px;
     width: 500px;
@@ -96,7 +96,7 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 350px;
     width: 350px;
@@ -118,11 +118,11 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 350px;
     width: 350px;
-    top: 200px;
+    top: 0px;
     left: -850px;
     right: -175px;
     bottom:-150px;
@@ -140,7 +140,7 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 350px;
     width: 350px;
@@ -162,7 +162,7 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 150px;
     width: 150px;
@@ -183,13 +183,13 @@ HEADER = '''
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
     height: 150px;
     width: 150px;
-    top: -525px;
-    left: -300px;
-    right: -175px;
+    top: -280px;
+    left: -200px;
+    right: -190px;
     bottom:-150px;
     position:relative;
     font-size: 16px;
@@ -197,20 +197,20 @@ HEADER = '''
     cursor: pointer;
     border-radius: 50%;
 }
-.TINYBUBBLE {
+.smallbubble2 {
     background-color: white; /* Green */
     border: none;
     color: black;
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.4;
     display: inline-block;
-    height: 100px;
-    width: 100px;
-    top: -605px;
-    left: -600px;
-    right: -175px;
+    height: 150px;
+    width: 150px;
+    top: -1090px;
+    left: 168px;
+    right: -190px;
     bottom:-150px;
     position:relative;
     font-size: 16px;
@@ -219,9 +219,10 @@ HEADER = '''
     border-radius: 50%;
 }
 
+
 </style>
 </head>
-'''
+<body>
 
 FOOTER = '''
   </div>
