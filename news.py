@@ -257,7 +257,6 @@ def parseFormData():
     # endpoint = form.getValue('endpoint')
     query = form.getvalue('search')
     #### TEMPORARY
-    query = "new york city"
     json = sourceData(endpoint, query)
     return json
 
