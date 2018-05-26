@@ -21,6 +21,144 @@ HEADER = '''
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bubbles.css">
 
+  <style>
+  body {
+    background-color:#aaf3f4;
+  }
+.bigbubble0 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    opacity: 0.5;
+    position:relative;
+    top: 150px;
+    left: 25px;
+    right: -50px;
+    bottom:-50px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+.bigbubble1 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    top: 250px;
+    left: 350px;
+    right: -75px;
+    bottom:-50px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bigbubble2 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 500px;
+    width: 500px;
+    top: 20px;
+    left: 400px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.mediumbubble0 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    top: 100px;
+    left: 400px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.mediumbubble1 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    top: 200px;
+    left: -850px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.mediumbubble2 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    top: -850px;
+    left: 525px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+</style>
+
+
 </head>
 
 <body>
