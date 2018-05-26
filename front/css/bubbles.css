@@ -12,17 +12,13 @@
     position:absolute;
     list-style:none;
     display:block;
+    border-radius: 100%;
     width:40px;
     height:40px;
-<<<<<<< HEAD
-    background-color:rgba(255,255,255,.15);
-    bottom:-120px;
-=======
     background-color: transparent;
     bottom:0px;
->>>>>>> b2046f112b727d9f05c9c5fa5208ae85d9c43a94
-    -webkit-animation:square 20s infinite;
-    animation:square 20s infinite;
+    -webkit-animation:circle 20s infinite;
+    animation:circle 20s infinite;
     -webkit-transition-timing-function:linear;
     transition-timing-function:linear
   }
@@ -33,12 +29,13 @@
 
     .bg-bubbles li:nth-child(2){
       left:20%;
-      width:80px;
-      height:80px;
+      width:30px;
+      height:30px;
       -webkit-animation-delay:2s;
       animation-delay:2s;
       -webkit-animation-duration:17s;
-      animation-duration:17s
+      animation-duration:17s;
+      background-color:rgba(255,255,255,.4);
     }
   .bg-bubbles li:nth-child(3){
     left:25%;
@@ -47,8 +44,8 @@
   }
   .bg-bubbles li:nth-child(4){
     left:40%;
-    width:60px;
-    height:60px;
+    width:25px;
+    height:25px;
     -webkit-animation-duration:22s;
     animation-duration:22s;
     background-color:rgba(255,255,255,.25);
@@ -58,16 +55,16 @@
   }
   .bg-bubbles li:nth-child(6){
     left:80%;
-    width:100px;
-    height:100px;
+    width:10px;
+    height:10px;
     -webkit-animation-delay:3s;
     animation-delay:3s;
     background-color:rgba(255,255,255,.2)
     }
   .bg-bubbles li:nth-child(7){
     left:32%;
-    width:120px;
-    height:120px;
+    width:20px;
+    height:20px;
     -webkit-animation-delay:7s;
     animation-delay:7s
     }
@@ -86,28 +83,36 @@
     height:30px;
     -webkit-animation-delay:2s;
     animation-delay:2s;
-    -webkit-animation-duration:40s;
-    animation-duration:40s;
+    -webkit-animation-duration:10s;
+    animation-duration:10s;
     background-color:rgba(255,255,255,.3);
   }
   .bg-bubbles li:nth-child(10){
     left:90%;
-    width:120px;
-    height:120px;
-    -webkit-animation-delay:11s;
-    animation-delay:11s
+    width:15px;
+    height:15px;
+    -webkit-animation-delay:1s;
+    animation-delay:1s
+    -webkit-animation-duration:12s;
+    animation-duration:12s;
+    background-color:rgba(255,255,255,.3);
   }
   .bg-bubbles li:nth-child(10){
     left:90%;
-    width:120px;
-    height:120px;
-    -webkit-animation-delay:11s;
-    animation-delay:11s
+    width:25px;
+    height:25px;
+    -webkit-animation-delay:3s;
+    animation-delay:3s
   }
   .bg-bubbles li:nth-child(11){
     left:60%;
-    width:80px;
-    height:80px
+    width:30px;
+    height:30px;
+    -webkit-animation-delay:5s;
+    animation-delay:5s
+    -webkit-animation-duration:12s;
+    animation-duration:12s;
+    background-color:rgba(255,255,255,.3);
   }
   .bg-bubbles li:nth-child(12){
     left:78%;
@@ -119,7 +124,7 @@
     animation-duration:20s;
     background-color:rgba(255,255,255,.3)
   }
-  @-webkit-keyframes square{
+  @-webkit-keyframes circle{
     0%{
       -webkit-transform:translateY(0);
       transform:translateY(0)
@@ -129,7 +134,7 @@
       transform:translateY(-800px) rotate(630deg)
     }
   }
-  @keyframes square{
+  @keyframes circle{
     0%{
       -webkit-transform:translateY(0);
       transform:translateY(0)
