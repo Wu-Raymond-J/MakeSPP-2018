@@ -99,9 +99,13 @@ for key, value in json.items():
 
 
 def parseFormData():
+    ## top-headlines = big bubbles
+    ## everything = little bubbles
     endpoint = ""   # temporary
     # endpoint = form.getValue('endpoint')
     query = form.getvalue('search')
 
     return sourceData(endpoint, query)
+
+
 
