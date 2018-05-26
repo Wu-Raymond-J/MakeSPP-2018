@@ -58,10 +58,12 @@
 
 @keyframes square{
   0% {
+      -webkit-transform: translateY(0);
       transform: translateY(0);
   }
   100% {
-      transform: translateY(-1080px);
+      -webkit-transform: translateY(-1080px) rotate(630deg);
+      transform: translateY(-1080px) rotate(630deg);
   }
 }
 
