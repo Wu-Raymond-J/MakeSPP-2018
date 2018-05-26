@@ -9,7 +9,7 @@ import json
 
 form = cgi.FieldStorage()
 
-print ('''
+HEADER = '''
 <!DOCTYPE html>
 <html>
 
@@ -29,34 +29,17 @@ print ('''
       MAKESPP 2018
     </div>
 
+'''
+
+FOOTER = '''
     <div class="w3-display-bottomleft w3-padding-large">
       Rubin Peci, Kaitlin Wan, Raymond Wu, Anne Zhang
     </div>
   </div>
-<!--
-  <ul class="bg-bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-
-    <ul> -->
 
 </body>
 
-</html>''')
+</html>'''
 
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
@@ -134,7 +117,7 @@ def parse_dictionary():
 
     return return_dictionary
 
-def bubble(num):
+def big_bubble(num):
     dictionary = parse_dictionary()
 
     url = dictionary["urls"][num]    
@@ -147,4 +130,11 @@ def bubble(num):
     
     return BASE_STRING_START + "<b>" + title + "</b>\n<br>" + source + "<br>" + author + BASE_STRING_END
 
+def main():
+    return_string = ""
+    for i in range(3):
+        return_string += bubble(i) + "\n\n\t\t"
 
+    return HEADER + return_string + FOOTER
+
+print(main())
