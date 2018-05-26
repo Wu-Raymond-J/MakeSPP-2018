@@ -343,13 +343,13 @@ def main():
 
 
     ## generate MEDIUM bubbles
-    i = 4
+    i = 0
     while True:
         try:
             return_string += med_bubble(i) + "\n\n\t\t"
             i += 1
         except:
-            break
+            i = 0
     
     return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").encode('ascii', 'ignore')
     return HEADER + return_string + FOOTER
