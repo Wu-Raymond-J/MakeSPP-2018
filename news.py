@@ -1,5 +1,6 @@
 #!/usr/bin/python
 print( "Content-type: text/html\n")
+print ("Content-type: text/html\n")
 import cgitb
 cgitb.enable()
 
@@ -7,7 +8,7 @@ import cgi
 import requests
 import json
 
-print('''
+print ('''
 <!DOCTYPE html>
 <html>
 
@@ -80,3 +81,7 @@ def sourceData(endpoint, query):
     response = requests.get(url)
     data = response.json()
     return data
+
+## debugging
+print ( sourceData("everything", "Barack Obama") )
+
