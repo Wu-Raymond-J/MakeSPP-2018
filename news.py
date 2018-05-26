@@ -319,10 +319,39 @@ def big_bubble(num):
     
     return BASE_STRING_START + "<b>" + title + "</b>\n<br>" + source + "<br>" + author + BASE_STRING_END
 
+
+
+def med_bubble(num):
+    dictionary = parse_dictionary()
+
+    url = dictionary["urls"][num]    
+    BASE_STRING_START = '<a href="' + url + '" class="mediumbubble' + str(num) + ' button' + str(num) + '"> <center><br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>'
+    BASE_STRING_END = '</center></a>'
+
+    title = dictionary["titles"][num]
+    source = dictionary["sources"][num]
+    author = dictionary["authors"][num]
+    
+    return BASE_STRING_START + "<b>" + title + "</b>\n<br>" + source + "<br>" + author + BASE_STRING_END
+
+
 def main():
     return_string = ""
+
+    ## generate BIG bubbles
     for i in range(3):
         return_string += big_bubble(i) + "\n\n\t\t"
+
+
+    ## generate MEDIUM bubbles
+    i = 4
+    while True:
+        try:
+            return_string += med_bubble(i) + "\n\n\t\t"
+            i++
+        except:
+            break
+    
     return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'")
     return HEADER + return_string + FOOTER
 
