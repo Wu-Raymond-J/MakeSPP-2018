@@ -120,7 +120,7 @@ button, input {
   overflow: visible
 }
 
-/* button, select {
+button, select {
   text-transform: none
 }
 
@@ -135,7 +135,7 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText
-} */
+}
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -1688,7 +1688,8 @@ body, html {
   position: relative;
   color: white;
   font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .topleft {
