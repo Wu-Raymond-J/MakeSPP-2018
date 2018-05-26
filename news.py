@@ -80,4 +80,5 @@ def sourceData(endpoint, query):
     response = requests.get(url)
     return response.json()
 
-print sourceData("everything", "Barack Obama")
+## debugging
+# print ( sourceData("everything", "Barack Obama") )
