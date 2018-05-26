@@ -14,8 +14,13 @@
     display:block;
     width:40px;
     height:40px;
+<<<<<<< HEAD
     background-color:rgba(255,255,255,.15);
     bottom:-120px;
+=======
+    background-color: transparent;
+    bottom:0px;
+>>>>>>> b2046f112b727d9f05c9c5fa5208ae85d9c43a94
     -webkit-animation:square 20s infinite;
     animation:square 20s infinite;
     -webkit-transition-timing-function:linear;
