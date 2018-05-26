@@ -14,7 +14,7 @@
   display: block;
   background-color: rgba(255,255,255,0.15);
   bottom: -100px;
-  animation: circle 20s infinite;
+  animation: square 20s infinite;
   transition-timing-function: linear;
 }
 
@@ -58,11 +58,9 @@
 
 @keyframes square{
   0% {
-      -webkit-transform: translateY(0);
       transform: translateY(0);
   }
   100% {
-      -webkit-transform: translateY(-1090px);
       transform: translateY(-1080px);
   }
 }
