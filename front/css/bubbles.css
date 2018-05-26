@@ -17,8 +17,13 @@
     height:40px;
     background-color: transparent;
     bottom:0px;
+<<<<<<< HEAD
     -webkit-animation:circle 20s infinite;
     animation:circle 20s infinite;
+=======
+    -webkit-animation:square 20s infinite;
+    animation:square 20s infinite;
+>>>>>>> 616978f78d43f5186f59d927daf31b15206f54aa
     -webkit-transition-timing-function:linear;
     transition-timing-function:linear
   }
