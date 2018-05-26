@@ -1677,7 +1677,7 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: linear-gradient(to top, #3b65a4, #3c8abe, #54add2, #7bd1e3, #aaf3f4);
     height: 100%;
     background-position: center;
     background-size: cover;
