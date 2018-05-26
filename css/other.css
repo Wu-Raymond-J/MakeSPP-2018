@@ -120,7 +120,7 @@ button, input {
   overflow: visible
 }
 
-button, select {
+/* button, select {
   text-transform: none
 }
 
@@ -135,7 +135,7 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText
-}
+} */
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -181,6 +181,10 @@ textarea {
   -webkit-appearance: button;
   font: inherit
 }
+
+
+
+
 
 /* End extract */
 
@@ -324,10 +328,10 @@ a {
   user-select: none
 }
 
-.w3-disabled, .w3-btn:disabled, .w3-button:disabled {
+/* .w3-disabled, .w3-btn:disabled, .w3-button:disabled {
   cursor: not-allowed;
   opacity: 0.3
-}
+} */
 
 .w3-disabled *, :disabled * {
   pointer-events: none
