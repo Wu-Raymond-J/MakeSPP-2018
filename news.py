@@ -347,7 +347,7 @@ def main():
         except:
             break
     
-    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").replace(r"\uxe9", "'")
+    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").encode('ascii', 'ignore')
     return HEADER + return_string + FOOTER
 
 print(main())
