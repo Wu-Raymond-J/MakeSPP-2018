@@ -17,3 +17,13 @@
   animation: circle 20s infinite;
   transition-timing-function: linear;
 }
+
+body,h1 {font-family: "Raleway", sans-serif}
+
+body, html {height: 100%}
+.bgimg {
+    background-image: flower.jpg;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
