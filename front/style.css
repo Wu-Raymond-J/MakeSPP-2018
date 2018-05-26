@@ -68,7 +68,7 @@
 }
 
 body{
-    background-color: black;
+    background-image: linear-gradient(to top, #3b65a4, #3c8abe, #54add2, #7bd1e3, #aaf3f4);
     z-index: 1;
 }
 
