@@ -1,4 +1,13 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import cgi
+import cgitb:
 import requests
+cgitb.enable()
+
+print "content-Type: text/html\n"
+
 
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
@@ -19,4 +28,4 @@ def getURL(endpoint, query):
 print ( getURL("", "barack obama") )
 response = requests.get(getURL("","barack obama"))
 
-print ( response.json() )
+print(response.json())
