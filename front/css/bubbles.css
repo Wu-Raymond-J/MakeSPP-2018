@@ -15,7 +15,7 @@
     width:40px;
     height:40px;
     background-color: transparent;
-    bottom:-120px;
+    bottom:0px;
     -webkit-animation:square 20s infinite;
     animation:square 20s infinite;
     -webkit-transition-timing-function:linear;
