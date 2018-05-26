@@ -1742,8 +1742,8 @@ hr {
 
 .button:hover {opacity: 1} */
 
-.button {
-    background-color: #4CAF50; /* Green */
+button {
+    background-color: white;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -1755,6 +1755,7 @@ hr {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    outline: none;
 }
 
 .button1 {
