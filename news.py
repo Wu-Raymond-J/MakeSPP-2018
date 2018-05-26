@@ -240,11 +240,7 @@ def getURL(endpoint, query):
         # default endpoint = "top-headlines"
         retURL += "top-headlines?"
 
-    if query != "":
         retURL += "q=" + query.replace(" ", "+")
-    else:
-        # default query = "new york city"
-        retURL += "q=new+york+city"
 
     return retURL + "&apiKey=a842f08935ec4c4f8cbfa0ca729fc2c1"
 
