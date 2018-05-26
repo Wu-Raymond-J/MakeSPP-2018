@@ -105,7 +105,7 @@ def parseFormData():
         print (key, value)
 '''
 
-def user_view():
+def parse_dictionary():
     dictionary = parseFormData()
     return_dictionary = {}
 
@@ -132,6 +132,19 @@ def user_view():
         return_dictionary["urls"] = list_of_urls
         return_dictionary['urlToImage'] = list_of_images
 
-    print(return_dictionary)
-        
-user_view()        
+    return return_dictionary
+
+def bubble(num):
+    dictionary = parse_dictionary()
+
+    url = dictionary["urls"][num]    
+    BASE_STRING_START = '<a href="' + url + '" class="bigbubble' + str(num) + ' button' + str(num)
+    BASE_STRING_END = '</a>'
+
+    title = dictionary["titles"][num]
+    source = dictionary["sources"][num]
+    author = dictionary["authors"][num]
+    
+    return BASE_STRING_START + "<b>" + title + "</b>\n<br>" + source + "<br>" + author + BASE_STRING_END
+
+
