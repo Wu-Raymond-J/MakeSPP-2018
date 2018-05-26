@@ -1,12 +1,13 @@
 #!/usr/bin/python
 print( "Content-type: text/html\n")
-print ("Content-type: text/html\n")
 import cgitb
 cgitb.enable()
 
 import cgi
 import requests
 import json
+
+form = cgi.FieldStorage()
 
 print ('''
 <!DOCTYPE html>
@@ -83,5 +84,4 @@ def sourceData(endpoint, query):
     return data
 
 ## debugging
-print ( sourceData("everything", "Barack Obama") )
-
+# print ( sourceData("everything", "Barack Obama") )
