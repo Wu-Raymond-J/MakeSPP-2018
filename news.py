@@ -223,6 +223,7 @@ HEADER = '''
 </style>
 </head>
 <body>
+'''
 
 FOOTER = '''
   </div>
