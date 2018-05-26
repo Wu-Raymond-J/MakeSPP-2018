@@ -1,5 +1,59 @@
+#!/usr/bin/python
+print 'content-type: test/html\n'
+
+import cgi
+import cgitb
+cgitb.enable()
 import requests
 
+print '''
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project Name</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/other.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bubbles.css">﻿
+
+</head>
+
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      Logo
+    </div>
+    <div class="w3-display-middle">
+    <a href="www.google.com" class="button">Link Button</a>
+    </div>
+
+
+    <div class="w3-display-bottomleft w3-padding-large">
+      Rubin Peci, Kaitlin Wan, Raymond Wu, Anne Zhang
+    </div>
+  </div>
+ <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+<ul>
+
+</body>
+
+</html>
+'''
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
 
