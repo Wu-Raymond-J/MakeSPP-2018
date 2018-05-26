@@ -19,12 +19,7 @@ HEADER = '''
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/Circles.css">
-
   <link rel="stylesheet" type="text/css" href="css/other.css">
-  <style>
-  body {
-    background-color:#aaf3f4;
-  }
   <style>
   body {
     background-color:#aaf3f4;
@@ -160,16 +155,72 @@ HEADER = '''
     border-radius: 50%;
 }
 
+.smallbubble0 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    top: -525px;
+    left: 875px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.smallbubble1 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    top: -525px;
+    left: -300px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.TINYBUBBLE {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    top: -605px;
+    left: -600px;
+    right: -175px;
+    bottom:-150px;
+    position:relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 </style>
-
-
 </head>
-
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      MAKESPP 2018
-    </div>
 '''
 
 FOOTER = '''
