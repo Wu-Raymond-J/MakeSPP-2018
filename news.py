@@ -77,3 +77,5 @@ def sourceData(endpoint, query):
     url = getURL(endpoint, query)
     response = requests.get(url)
     return response.json()
+
+print sourceData("everything", "Barack Obama")
