@@ -14,7 +14,7 @@
     display:block;
     width:40px;
     height:40px;
-    background-color:rgba(255,255,255,.15);
+    background-color: transparent;
     bottom:-120px;
     -webkit-animation:square 20s infinite;
     animation:square 20s infinite;
@@ -22,6 +22,7 @@
     transition-timing-function:linear
   }
 
+/* DIFFERENT TRASNPARENCIES */
   .bg-bubbles li:nth-child(1){
     left:10%
     }
