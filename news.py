@@ -120,7 +120,7 @@ def big_bubble(num):
     dictionary = parse_dictionary()
 
     url = dictionary["urls"][num]    
-    BASE_STRING_START = '<a href="' + url + '" class="bigbubble' + str(num) + ' button' + str(num)
+    BASE_STRING_START = '<a href="' + url + '" class="bigbubble' + str(num) + ' button' + str(num) + ">"
     BASE_STRING_END = '</a>'
 
     title = dictionary["titles"][num]
