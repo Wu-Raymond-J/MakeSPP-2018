@@ -16,7 +16,7 @@ print '''
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/other.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/bubbles.css">﻿
+  <link rel="stylesheet" type="text/css" href="css/bubbles.css">
 
 </head>
 
