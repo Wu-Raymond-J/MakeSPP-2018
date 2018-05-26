@@ -1769,3 +1769,23 @@ button {
 }
 
 .button:hover {opacity: 1} */
+
+input[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    /* background-image: url('searchicon.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color: #fff
+}
+
+input[type=text]:focus {
+    width: 105%;
+}
