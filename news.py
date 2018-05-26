@@ -133,7 +133,7 @@ def big_bubble(num):
 def main():
     return_string = ""
     for i in range(3):
-        return_string += bubble(i) + "\n\n\t\t"
+        return_string += big_bubble(i) + "\n\n\t\t"
 
     return HEADER + return_string + FOOTER
 
