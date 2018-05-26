@@ -240,11 +240,7 @@ def getURL(endpoint, query):
         # default endpoint = "top-headlines"
         retURL += "top-headlines?"
 
-    if query != "":
         retURL += "q=" + query.replace(" ", "+")
-    else:
-        # default query = "new york city"
-        retURL += "q=new+york+city"
 
     return retURL + "&apiKey=a842f08935ec4c4f8cbfa0ca729fc2c1"
 
@@ -261,7 +257,6 @@ def parseFormData():
     # endpoint = form.getValue('endpoint')
     query = form.getvalue('search')
     #### TEMPORARY
-    query = "new york city"
     json = sourceData(endpoint, query)
     return json
 
@@ -352,7 +347,7 @@ def main():
         except:
             break
     
-    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").replace(u"\uxe9", "'")
+    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").replace(r"\uxe9", "'")
     return HEADER + return_string + FOOTER
 
 print(main())
