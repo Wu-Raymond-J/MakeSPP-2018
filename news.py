@@ -134,7 +134,7 @@ def main():
     return_string = ""
     for i in range(3):
         return_string += big_bubble(i) + "\n\n\t\t"
-
+    return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'")
     return HEADER + return_string + FOOTER
 
 print(main())

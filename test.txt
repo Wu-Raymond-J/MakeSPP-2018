@@ -1,0 +1,40 @@
+Content-type: text/html
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MAKESPP 2018</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/other.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bubbles.css">
+
+</head>
+
+<body>
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      MAKESPP 2018
+    </div>
+
+<a href="http://mashable.com/2018/05/26/mta-country-nyc-subway-video-game/" class="bigbubble0 button0<b>New York City subways torched in new browser game, 'MTA Country'</b>
+<br>Mashable<br>Adam Rosenberg</a>
+
+		<a href="https://www.theverge.com/2018/5/26/17389768/new-york-citys-subway-disaster-now-has-its-own-8-bit-video-game" class="bigbubble1 button1<b>New York City's subway disaster now has its own 8-bit video game</b>
+<br>The Verge<br>Andrew J. Hawkins</a>
+
+		<a href="http://www.nbcnews.com/news/us-news/plastic-straws-clog-ocean-hurt-fish-now-there-s-growing-n877356" class="bigbubble2 button2<b>Plastic straws clog the ocean and hurt fish. Now there's a growing movement to ban them.</b>
+<br>NBC News<br>James Rainey</a>
+
+		
+    <div class="w3-display-bottomleft w3-padding-large">
+      Rubin Peci, Kaitlin Wan, Raymond Wu, Anne Zhang
+    </div>
+  </div>
+
+</body>
+
+</html>
