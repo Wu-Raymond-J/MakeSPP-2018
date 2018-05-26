@@ -28,6 +28,7 @@ HEADER = '''
     <div class="w3-display-topleft w3-padding-large w3-xlarge">
       MAKESPP 2018
     </div>
+  </div>
 
 '''
 
