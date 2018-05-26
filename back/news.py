@@ -1,4 +1,13 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import cgi
+import cgitb:
 import requests
+cgitb.enable()
+
+print "content-Type: text/html\n"
+
 
 url = ("https://newsapi.org/v2/top-headlines?"
        "country=us&"
@@ -6,4 +15,4 @@ url = ("https://newsapi.org/v2/top-headlines?"
 
 response = requests.get(url)
 
-print ( response.json() )
+print(response.json())
