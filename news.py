@@ -1,5 +1,5 @@
 #!/usr/bin/python
-print( "Content-type: text/html\n")
+
 import cgitb
 cgitb.enable()
 
@@ -14,13 +14,16 @@ HEADER = '''
 <html>
 
 <head>
-  <title>MAKESPP 2018</title>
+  <title>OUR PROJECT</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/other.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/bubbles.css">
+  <link rel="stylesheet" type="text/css" href="css/Circles.css">
 
+  <link rel="stylesheet" type="text/css" href="css/other.css">
+  <style>
+  body {
+    background-color:#aaf3f4;
+  }
   <style>
   body {
     background-color:#aaf3f4;
