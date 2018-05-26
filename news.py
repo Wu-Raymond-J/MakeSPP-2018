@@ -1,12 +1,13 @@
 #!/usr/bin/python
-print "Content-type: text/html\n"
+print( "Content-type: text/html\n")
 import cgitb
 cgitb.enable()
 
 import cgi
 import requests
+import json
 
-print '''
+print('''
 <!DOCTYPE html>
 <html>
 
@@ -53,7 +54,8 @@ print '''
 </body>
 
 </html>
-'''
+''')
+
 def getURL(endpoint, query):
     retURL = "https://newsapi.org/v2/"
 
