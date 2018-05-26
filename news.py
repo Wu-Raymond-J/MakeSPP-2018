@@ -349,7 +349,7 @@ def main():
             return_string += med_bubble(i) + "\n\n\t\t"
             i += 1
         except:
-            i = 0
+            break
     
     return_string = return_string.replace(u"\u2018", "'").replace(u"\u2019", "'").encode('ascii', 'ignore')
     return HEADER + return_string + FOOTER
