@@ -65,8 +65,8 @@ def getURL(endpoint, query):
         # endpoint in ["top-headlines", "everything"]
         retURL += endpoint + "?"
     else:
-        # default endpoint = "everything"
-        retURL += "everything?"
+        # default endpoint = "top-headlines"
+        retURL += "top-headlines?"
 
     if query != "":
         retURL += "q=" + query.replace(" ", "+")
@@ -85,7 +85,17 @@ def sourceData(endpoint, query):
     return data
 
 
-print ( sourceData("", "") )  ## for planning for representing JSON data in bubbles
+json = sourceData("", "")
+for key, value in json.items():
+    if key == "articles":
+        print (key)
+        print ("****")
+        for thing in value:
+            print (thing )
+            print ( "\n\n" )
+        print ("****")
+    else:
+        print (key, value)
 
 
 def parseFormData():
