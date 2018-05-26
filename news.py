@@ -1,9 +1,9 @@
 #!/usr/bin/python
-print 'content-type: test/html\n'
-
-import cgi
+print "Content-type: text/html\n"
 import cgitb
 cgitb.enable()
+
+import cgi
 import requests
 
 print '''
