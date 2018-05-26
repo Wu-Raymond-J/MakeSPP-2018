@@ -78,4 +78,5 @@ def getURL(endpoint, query):
 def sourceData(endpoint, query):
     url = getURL(endpoint, query)
     response = requests.get(url)
-    return response.json()
+    data = response.json()
+    return data
