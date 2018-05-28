@@ -268,7 +268,8 @@ def parseFormData():
     if 'search' in form and form['search'] != "":
         query = form.getvalue('search')
     else:
-         print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
+         print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>
+<center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
          exit()
     json = sourceData(endpoint, query)
     return json
@@ -284,7 +285,8 @@ def parse_dictionary():
     list_of_images = []
 
     if int(dictionary["totalResults"]) == 0:
-        print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
+        print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>
+<center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
         exit()
     else:
         articles = dictionary["articles"]
