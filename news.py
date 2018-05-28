@@ -331,7 +331,7 @@ def med_bubble(num):
     dictionary = parse_dictionary()
 
     url = dictionary["urls"][num]    
-    BASE_STRING_START = '<a href="' + url + '" class="mediumbubble' + str(num) + ' button' + str(num) + '"> <center><br>\n<br>\n<br>\n<br>\n<br>\n<br>'
+    BASE_STRING_START = '<a href="' + url + '" class="mediumbubble' + str(num) + ' button' + str(num) + '"> <center><br>\n<br>\n<br>\n<br>\n<br>'
     BASE_STRING_END = '</center></a>'
 
     title = dictionary["titles"][num]
