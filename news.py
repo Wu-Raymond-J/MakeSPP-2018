@@ -269,21 +269,8 @@ def parseFormData():
     else:
          print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble2 nosearch"><center>No relevant articles found!<br>Click here to go back</a>'+ FOOTER)
 
-    #### TEMPORARY
     json = sourceData(endpoint, query)
     return json
-
-'''    for key, value in json.items():
-    if key == "articles":
-        print (key)
-        print ("****")
-        for thing in value:
-            print (thing )
-            print ( "\n\n" )
-        print ("****")
-    else:
-        print (key, value)
-'''
 
 def parse_dictionary():
     dictionary = parseFormData()
@@ -301,11 +288,11 @@ def parse_dictionary():
     else:
         articles = dictionary["articles"]
         for article in articles:
-            list_of_titles.append(article["title"])
-            list_of_authors.append(article["author"])
-            list_of_sources.append(article['source']['name'])
-            list_of_urls.append(article['url'])
-            list_of_images.append(article['urlToImage'])
+            list_of_titles.append(article["title"].encode("utf-8"))
+            list_of_authors.append(article["author"].encode("utf-8"))
+            list_of_sources.append(article['source']['name'].encode("utf-8"))
+            list_of_urls.append(article['url'].encode("utf-8"))
+            list_of_images.append(article['urlToImage'].encode("utf-8"))
 
         return_dictionary["titles"] = list_of_titles
         return_dictionary["authors"] = list_of_authors
