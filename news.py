@@ -288,11 +288,20 @@ def parse_dictionary():
     else:
         articles = dictionary["articles"]
         for article in articles:
-            list_of_titles.append(article["title"].encode("utf-8"))
-            list_of_authors.append(article["author"].encode("utf-8"))
-            list_of_sources.append(article['source']['name'].encode("utf-8"))
-            list_of_urls.append(article['url'].encode("utf-8"))
-            list_of_images.append(article['urlToImage'].encode("utf-8"))
+            if 'title' in articles:
+                list_of_titles.append(article["title"].encode("utf-8"))
+
+            if 'author' in articles:
+                list_of_authors.append(article["author"].encode("utf-8"))
+
+            if 'source' in articles:
+                list_of_sources.append(article['source']['name'].encode("utf-8"))
+
+            if 'url' in articles:
+                list_of_urls.append(article['url'].encode("utf-8"))
+
+            if 'urlToImage' in articles:
+                list_of_images.append(article['urlToImage'].encode("utf-8"))
 
         return_dictionary["titles"] = list_of_titles
         return_dictionary["authors"] = list_of_authors
