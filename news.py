@@ -15,7 +15,7 @@ HEADER = '''
 <html>
 
 <head>
-  <title>OUR PROJECT</title>
+  <title>Bubble News</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/Circles.css">
@@ -284,7 +284,7 @@ def parse_dictionary():
     list_of_images = []
 
     if int(dictionary["totalResults"]) == 0:
-        print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html"><center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
+        print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble0 nosearch"><center>No relevant articles found!<br>Click here to go back</center></a>'+ FOOTER)
         exit()
     else:
         articles = dictionary["articles"]
