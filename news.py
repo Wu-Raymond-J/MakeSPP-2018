@@ -264,7 +264,11 @@ def sourceData(endpoint, query):
 def parseFormData():
     endpoint = ""   # temporary
     # endpoint = form.getValue('endpoint')
-    query = form.getvalue('search')
+    if 'search' in form:
+        query = form.getvalue('search')
+    else:
+         print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble2 nosearch"><center>No relevant articles found!<br>Click here to go back</a>'+ FOOTER)
+
     #### TEMPORARY
     json = sourceData(endpoint, query)
     return json
