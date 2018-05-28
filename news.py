@@ -289,19 +289,19 @@ def parse_dictionary():
         articles = dictionary["articles"]
         for article in articles:
             if 'title' in article and article['title'] is not None:
-                list_of_titles.append(article["title"].encode("ascii"))
+                list_of_titles.append(article["title"].encode("ascii", "ignore"))
 
             if 'author' in article and article['author'] is not None:
-                list_of_authors.append(article["author"].encode("ascii"))
+                list_of_authors.append(article["author"].encode("ascii", "ignore"))
 
             if 'source' in article and article['source'] is not None:
-                list_of_sources.append(article['source']['name'].encode("ascii"))
+                list_of_sources.append(article['source']['name'].encode("ascii", "ignore"))
 
             if 'url' in article and article['url'] is not None:
-                list_of_urls.append(article['url'].encode("ascii"))
+                list_of_urls.append(article['url'].encode("ascii"), "ignore")
 
             if 'urlToImage' in article and article['urlToImage'] is not None:
-                list_of_images.append(article['urlToImage'].encode("ascii"))
+                list_of_images.append(article['urlToImage'].encode("ascii"), "ignore")
 
         return_dictionary["titles"] = list_of_titles
         return_dictionary["authors"] = list_of_authors
