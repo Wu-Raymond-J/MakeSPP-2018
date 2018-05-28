@@ -268,7 +268,7 @@ def parseFormData():
     if 'search' in form and form['search'] != "":
         query = form.getvalue('search')
     else:
-         print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><center>No relevant articles found!<br>Click here to go back</a>'+ FOOTER)
+         print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html"><center>No relevant articles found!<br>Click here to go back</a>'+ FOOTER)
          exit()
     json = sourceData(endpoint, query)
     return json
