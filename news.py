@@ -264,7 +264,8 @@ def sourceData(endpoint, query):
 def parseFormData():
     endpoint = ""   # temporary
     # endpoint = form.getValue('endpoint')
-    if 'search' in form:
+    query = ""
+    if 'search' in form and form['search'] != "":
         query = form.getvalue('search')
     else:
          print(HEADER + '<a href="http://homer.stuy.edu/~rpeci/MakeSPP-2018/index.html" class="bigbubble1 nosearch"><center>No relevant articles found!<br>Click here to go back</a>'+ FOOTER)
